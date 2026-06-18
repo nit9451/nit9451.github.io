@@ -146,7 +146,7 @@ strong {
 }
 
 .book-sidebar {
-  width: 260px;
+  width: 280px;
   position: sticky;
   top: 60px;
   height: calc(100vh - 100px);
@@ -155,7 +155,7 @@ strong {
   justify-content: space-between;
   padding: 2rem 0;
   border-right: 1px solid var(--ink-faint);
-  padding-right: 2rem;
+  padding-right: 1.5rem;
   flex-shrink: 0;
 }
 
@@ -192,6 +192,61 @@ strong {
   font-size: 0.72rem;
   color: var(--ink-muted);
   margin-bottom: 1.25rem;
+}
+
+/* Sidebar Status & Action Buttons */
+.availability-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.availability-status .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #16a34a;
+  box-shadow: 0 0 6px rgba(22, 163, 74, 0.6);
+  animation: pulse-dot 2.5s ease-in-out infinite;
+}
+
+.sidebar-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  width: 100%;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--red);
+  border-radius: 4px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--red);
+  text-decoration: none;
+  background: var(--red-bg);
+  transition: all var(--t-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.sidebar-btn:hover {
+  background: var(--red);
+  color: var(--paper);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.sidebar-btn svg {
+  flex-shrink: 0;
+  opacity: 0.9;
 }
 
 .sidebar-toc h3 {
@@ -263,6 +318,33 @@ strong {
   gap: 0.75rem;
 }
 
+.sidebar-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--ink-faint);
+  border-radius: 4px;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  background: var(--paper-alt);
+  cursor: pointer;
+  transition: all var(--t-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.sidebar-theme-toggle:hover {
+  border-color: var(--red);
+  color: var(--red);
+  background: var(--red-bg);
+  transform: translateY(-1px);
+}
+
 .colophon-text {
   font-family: var(--font-sans);
   font-size: 0.62rem;
@@ -272,8 +354,8 @@ strong {
 
 .page {
   flex: 1;
-  max-width: 760px;
-  padding: 0 0 var(--chapter-gap);
+  max-width: 780px;
+  padding: 0 2rem var(--chapter-gap) 3.5rem;
   position: relative;
 }
 
