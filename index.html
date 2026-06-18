@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nitish Kumar Purohit — Portfolio</title>
+  <meta name="description" content="Portfolio of Nitish Kumar Purohit — SDE-III, Full Stack AI Engineer. 5.6+ years building scalable systems and GenAI solutions." />
+  <meta name="author" content="Nitish Kumar Purohit" />
+
+  <meta property="og:title" content="Nitish Kumar Purohit — Portfolio" />
+  <meta property="og:description" content="SDE-III building high-concurrency systems and production GenAI solutions." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======== READING PROGRESS BAR ======== -->
+  <div class="progress-bar" id="progress-bar"></div>
+
+  <!-- ======== RUNNING HEADER ======== -->
+  <header class="running-header" id="header">
+    <div class="left-group">
+      <span class="book-title">Nitish Kumar Purohit</span>
+      <span class="current-chapter" id="current-chapter"></span>
+    </div>
+    <nav id="header-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certs</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon">☼</span>
+        <span class="theme-text">Light</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle contents" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ======== BOOK CONTAINER LAYOUT ======== -->
+  <div class="book-layout">
+
+    <!-- ======== FIXED LEFT SIDEBAR ======== -->
+    <aside class="book-sidebar">
+      <div class="sidebar-header">
+        <div class="edition">First Edition · 2026</div>
+        <h1 class="sidebar-title">Nitish Kumar Purohit</h1>
+        <p class="sidebar-subtitle">SDE-III · Full Stack AI Engineer</p>
+        <div class="availability-badge" style="margin-bottom: 1rem;">
+          <span class="dot"></span>
+          Available for new chapters
+        </div>
+        <a href="resume.pdf" class="contact-item" download id="download-resume-sidebar" style="text-decoration: none; border-color: var(--red); color: var(--red); background: var(--red-bg); width: 100%; justify-content: center; padding: 0.5rem 1rem; margin-top: 0.5rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px; opacity: 0.9; margin-right: 4px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume (PDF)
+        </a>
+      </div>
+      
+      <nav class="sidebar-toc">
+        <h3>Contents</h3>
+        <ol class="toc-list">
+          <li><a href="#about">About the Author</a> <span class="toc-page">i</span></li>
+          <li><a href="#skills">Technical Proficiencies</a> <span class="toc-page">ii</span></li>
+          <li><a href="#experience">Professional History</a> <span class="toc-page">iii</span></li>
+          <li><a href="#projects">Selected Works</a> <span class="toc-page">iv</span></li>
+          <li><a href="#certifications">Certifications & Credentials</a> <span class="toc-page">v</span></li>
+          <li><a href="#education">Academic Background</a> <span class="toc-page">vi</span></li>
+          <li><a href="#contact">Correspondence</a> <span class="toc-page">vii</span></li>
+        </ol>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="theme-toggle" id="sidebar-theme-toggle">
+          <span class="theme-icon">☼</span>
+          <span class="theme-text">Light Mode</span>
+        </button>
+        <div class="colophon-text">Noida, India</div>
+      </div>
+    </aside>
+
+    <!-- ======== RIGHT PAGES COLUMN ======== -->
+    <main class="page">
+
+    <!-- ======== TITLE PAGE ======== -->
+    <section class="title-page" id="hero">
+      <div class="edition reveal">First Edition · 2026</div>
+      <h1 class="reveal reveal-d1">Nitish Kumar<br />Purohit</h1>
+      <p class="subtitle reveal reveal-d2">
+        A compendium of engineering, architecture,<br />
+        and artificial intelligence.
+      </p>
+      <div class="author-info reveal reveal-d3">
+        <span>SDE-III</span> · Full Stack AI Engineer · GenAI & AI Systems<br />
+        Noida, India · knitish899@gmail.com · +91-8210510438
+      </div>
+      <div class="availability-badge reveal reveal-d4">
+        <span class="dot"></span>
+        Available for new chapters
+      </div>
+      <div class="hero-actions reveal reveal-d5" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+        <a href="resume.pdf" class="contact-item" download id="download-resume-hero" style="text-decoration: none; border-color: var(--red); color: var(--red); background: var(--red-bg); display: inline-flex; align-items: center; gap: 0.35rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px; opacity: 0.9;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- ======== TABLE OF CONTENTS ======== -->
+    <div class="toc reveal" id="toc">
+      <h2>Contents</h2>
+      <ol class="toc-list">
+        <li><a href="#about">About the Author</a> <span class="toc-page">i</span></li>
+        <li><a href="#skills">Technical Proficiencies</a> <span class="toc-page">ii</span></li>
+        <li><a href="#experience">Professional History</a> <span class="toc-page">iii</span></li>
+        <li><a href="#projects">Selected Works</a> <span class="toc-page">iv</span></li>
+        <li><a href="#certifications">Certifications & Credentials</a> <span class="toc-page">v</span></li>
+        <li><a href="#education">Academic Background</a> <span class="toc-page">vi</span></li>
+        <li><a href="#contact">Correspondence</a> <span class="toc-page">vii</span></li>
+      </ol>
+    </div>
+
+    <!-- ======== CHAPTER I — ABOUT ======== -->
+    <section class="chapter" id="about">
+      <span class="chapter-number reveal">Chapter I</span>
+      <h2 class="chapter-title reveal">About the Author</h2>
+
+      <p class="drop-cap reveal reveal-d1">
+        Over the course of five and a half years in production software engineering, 
+        the author has developed a particular expertise in building systems that 
+        operate at scale — systems designed not merely to function, but to endure 
+        under the weight of real-world concurrency, security audits, and the 
+        unrelenting demands of enterprise users.
+      </p>
+
+      <p class="reveal reveal-d2">
+        For the past two years, this work has increasingly centered on 
+        <strong>Generative AI</strong>: specifically, the construction of 
+        <strong>Retrieval-Augmented Generation (RAG)</strong> pipelines, the design 
+        of agentic AI workflows, and the careful optimisation of vector database 
+        queries — all deployed into production environments where failure is not 
+        abstract but measurable.
+      </p>
+
+      <div class="margin-note reveal reveal-d3">
+        <strong>Note to the reader:</strong> The metrics presented throughout this 
+        document are drawn from production systems, not academic exercises. Each 
+        figure represents measurable, shipped outcomes.
+      </div>
+
+      <p class="reveal reveal-d4">
+        The tools of choice include <strong>Next.js</strong> (App Router), advanced 
+        <strong>TypeScript</strong>, and <strong>FastAPI</strong> — combined with a deep 
+        focus on security, performance, and the invisible craft of making complex 
+        systems feel simple. Currently based in Noida, India.
+      </p>
+
+      <!-- Figure 1 — Metrics -->
+      <div class="figure reveal reveal-d5">
+        <div class="figure-grid">
+          <div class="figure-stat">
+            <div class="value">5.6+</div>
+            <div class="label">Years shipped</div>
+          </div>
+          <div class="figure-stat">
+            <div class="value">2+</div>
+            <div class="label">Years GenAI</div>
+          </div>
+          <div class="figure-stat">
+            <div class="value">40%</div>
+            <div class="label">LCP improved</div>
+          </div>
+          <div class="figure-stat">
+            <div class="value">150ms</div>
+            <div class="label">p99 latency</div>
+          </div>
+        </div>
+        <div class="figure-caption"><strong>Figure 1.</strong> Key performance indicators from production systems, 2019–2026.</div>
+      </div>
+    </section>
+
+    <!-- ======== CHAPTER II — SKILLS ======== -->
+    <section class="chapter" id="skills">
+      <span class="chapter-number reveal">Chapter II</span>
+      <h2 class="chapter-title reveal">Technical Proficiencies</h2>
+
+      <p class="reveal reveal-d1">
+        The following table enumerates the primary technologies and methodologies 
+        employed across production systems. They are organised by domain for the 
+        reader's convenience.
+      </p>
+
+      <div class="table-caption reveal reveal-d2"><strong>Table 1.</strong> Complete technical stack, grouped by discipline.</div>
+      <table class="data-table reveal reveal-d2">
+        <thead>
+          <tr>
+            <th>Domain</th>
+            <th>Technologies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="category-label">Frontend</td>
+            <td>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Next.js (App Router)</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">shadcn/ui</span>
+              <span class="skill-tag">Radix UI</span>
+              <span class="skill-tag">Redux</span>
+              <span class="skill-tag">Jotai</span>
+              <span class="skill-tag">TanStack Query</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="category-label">Backend</td>
+            <td>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">GraphQL</span>
+              <span class="skill-tag">WebSockets</span>
+              <span class="skill-tag">Socket.IO</span>
+              <span class="skill-tag">SSE</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="category-label">AI / GenAI</td>
+            <td>
+              <span class="skill-tag">RAG Pipelines</span>
+              <span class="skill-tag">Pinecone</span>
+              <span class="skill-tag">Weaviate</span>
+              <span class="skill-tag">Agentic Workflows</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">LLM Inference</span>
+              <span class="skill-tag">MCP</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="category-label">Security & DevOps</td>
+            <td>
+              <span class="skill-tag">OAuth2 / JWT</span>
+              <span class="skill-tag">RBAC</span>
+              <span class="skill-tag">Zod Validation</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">GitLab</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="category-label">Architecture</td>
+            <td>
+              <span class="skill-tag">Microservices</span>
+              <span class="skill-tag">SaaS Architecture</span>
+              <span class="skill-tag">Core Web Vitals</span>
+              <span class="skill-tag">Vitest</span>
+              <span class="skill-tag">Jest</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ======== CHAPTER III — EXPERIENCE ======== -->
+    <section class="chapter" id="experience">
+      <span class="chapter-number reveal">Chapter III</span>
+      <h2 class="chapter-title reveal">Professional History</h2>
+
+      <p class="reveal reveal-d1">
+        What follows is a chronological account of professional roles held, 
+        with particular attention to measurable outcomes and the technical 
+        decisions that produced them.
+      </p>
+
+      <!-- Mobcoder -->
+      <div class="entry reveal reveal-d2">
+        <div class="entry-header">
+          <span class="entry-role">SDE-III</span>
+          <span class="entry-period">Jan 2022 — Present</span>
+        </div>
+        <span class="entry-company">Mobcoder · Noida, India</span>
+        <ul class="entry-list">
+          <li>Architected multi-tenant SaaS platform on Next.js App Router with zero-downtime CI/CD, handling high-concurrency traffic at scale.</li>
+          <li>Built production <strong>RAG pipelines</strong> (OpenAI + Pinecone/Weaviate); cut irrelevant AI responses by <strong>60%</strong> via hybrid retrieval and re-ranking.</li>
+          <li>Shipped agentic AI workflows into customer-facing products — <strong>30% engagement uplift</strong> within 90 days.</li>
+          <li>Hardened all services with RBAC, JWT, and Zod validation — <strong>zero critical vulnerabilities</strong> across three consecutive security audits.</li>
+          <li>Optimised FastAPI async workers + connection pooling: API <strong>p99 latency dropped from ~800ms to under 150ms</strong>.</li>
+          <li>Led frontend audit across 3 products; <strong>LCP improved 40%</strong>, Lighthouse scores 60 → 90+ via streaming SSR.</li>
+        </ul>
+      </div>
+
+      <!-- Siscaso -->
+      <div class="entry reveal reveal-d3">
+        <div class="entry-header">
+          <span class="entry-role">Full Stack Developer</span>
+          <span class="entry-period">Jun 2020 — Dec 2021</span>
+        </div>
+        <span class="entry-company">Siscaso</span>
+        <ul class="entry-list">
+          <li>Delivered MERN stack SaaS apps for <strong>10k+ MAU</strong>; migrated REST → GraphQL, reducing over-fetching and improving mobile performance.</li>
+          <li>Cut initial bundle size by <strong>35%</strong> via code splitting and lazy loading, improving time-to-interactive on data-heavy dashboards.</li>
+        </ul>
+      </div>
+
+      <!-- DreamBig -->
+      <div class="entry reveal reveal-d4">
+        <div class="entry-header">
+          <span class="entry-role">Software Developer</span>
+          <span class="entry-period">Aug 2019 — May 2020</span>
+        </div>
+        <span class="entry-company">DreamBig Networks</span>
+        <ul class="entry-list">
+          <li>Built and shipped full-stack web features using JavaScript, Node.js, and MySQL in a fast-paced production environment.</li>
+          <li>Collaborated with cross-functional teams to deliver user-facing features on tight deadlines.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======== CHAPTER IV — PROJECTS ======== -->
+    <section class="chapter" id="projects">
+      <span class="chapter-number reveal">Chapter IV</span>
+      <h2 class="chapter-title reveal">Selected Works</h2>
+
+      <p class="reveal reveal-d1">
+        The projects described herein represent a selection of the most significant 
+        systems designed and delivered. Each entry includes the technical approach 
+        and its measurable impact.
+      </p>
+
+      <!-- Akari -->
+      <div class="project-entry reveal reveal-d2">
+        <div class="proj-header">
+          <h4>Akari — AI-Integrated Web Platform</h4>
+          <span class="proj-year">2025 – 2026</span>
+        </div>
+        <p>
+          Led full-stack development of an AI-powered platform with LLM-driven features 
+          and intelligent context-aware workflows. Owned end-to-end technical decisions — 
+          system design, API architecture, and deployment — delivering iterative feature 
+          releases on schedule.
+        </p>
+        <div class="tech-used">
+          <span class="tech-label">Stack:</span>
+          <span class="tech-chip">Next.js</span>
+          <span class="tech-chip">FastAPI</span>
+          <span class="tech-chip">LLM</span>
+          <span class="tech-chip">Agentic AI</span>
+        </div>
+      </div>
+
+      <!-- TIFIN IP -->
+      <div class="project-entry reveal reveal-d3">
+        <div class="proj-header">
+          <h4>TIFIN IP — AI Annuity Recommendation Engine</h4>
+          <span class="proj-year">2022 – 2024</span>
+        </div>
+        <p>
+          Built a RAG pipeline with Pinecone vector store for personalised annuity 
+          recommendations — <strong>45% retrieval precision improvement</strong> over keyword 
+          search. Integrated streaming LLM inference via SSE into a Next.js + FastAPI stack, 
+          cutting perceived latency and boosting advisor satisfaction.
+        </p>
+        <div class="tech-used">
+          <span class="tech-label">Stack:</span>
+          <span class="tech-chip">RAG</span>
+          <span class="tech-chip">Pinecone</span>
+          <span class="tech-chip">SSE</span>
+          <span class="tech-chip">Next.js</span>
+          <span class="tech-chip">FastAPI</span>
+        </div>
+      </div>
+
+      <!-- TIFIN Give -->
+      <div class="project-entry reveal reveal-d4">
+        <div class="proj-header">
+          <h4>TIFIN Give — DAF Philanthropy Platform</h4>
+          <span class="proj-year">2022 – 2023</span>
+        </div>
+        <p>
+          Built multi-custody grant management and community giving flows in Next.js. 
+          Platform processed <strong>15,000+ grants</strong> and <strong>$90M+</strong> in 2024. 
+          Integrated conversational AI for DAF funding and charity grants — recognised with 
+          the <strong>2024 FinTech Breakthrough Award</strong>.
+        </p>
+        <div class="tech-used">
+          <span class="tech-label">Stack:</span>
+          <span class="tech-chip">Next.js</span>
+          <span class="tech-chip">Conversational AI</span>
+          <span class="tech-chip">FinTech</span>
+        </div>
+      </div>
+
+      <!-- InvoiceMart -->
+      <div class="project-entry reveal reveal-d5">
+        <div class="proj-header">
+          <h4>InvoiceMart — RBI-Regulated TReDS Platform</h4>
+          <span class="proj-year">2022</span>
+        </div>
+        <p>
+          An Axis Bank × mjunction joint venture serving <strong>28,000+ MSMEs</strong>. 
+          Built auction and invoice workflows with bids settled within 24 hours. 
+          Production-grade financial compliance and real-time bid matching at scale.
+        </p>
+        <div class="tech-used">
+          <span class="tech-label">Stack:</span>
+          <span class="tech-chip">React.js</span>
+          <span class="tech-chip">Node.js</span>
+          <span class="tech-chip">RBI-Regulated</span>
+        </div>
+      </div>
+
+      <!-- GoGiv -->
+      <div class="project-entry reveal reveal-d6">
+        <div class="proj-header">
+          <h4>GoGiv — Enterprise SaaS Platform</h4>
+          <span class="proj-year">2023</span>
+        </div>
+        <p>
+          Multi-tenant SaaS with RBAC and white-label support for enterprise clients 
+          including <strong>Naukri.com</strong>. Achieved <strong>99% uptime</strong> on AWS.
+        </p>
+        <div class="tech-used">
+          <span class="tech-label">Stack:</span>
+          <span class="tech-chip">React.js</span>
+          <span class="tech-chip">Node.js</span>
+          <span class="tech-chip">AWS</span>
+          <span class="tech-chip">RBAC</span>
+        </div>
+      </div>
+
+      <!-- Wyvate & Youshd (brief) -->
+      <div class="margin-note reveal reveal-d7">
+        <strong>Additional works:</strong> 
+        <em>Wyvate</em> — Food delivery & restaurant management with real-time tracking (99% uptime).
+        <em>Youshd</em> — Influencer monetisation platform integrated with Instagram (25% increase in active users).
+      </div>
+    </section>
+
+    <!-- ======== CHAPTER V — CERTIFICATIONS ======== -->
+    <section class="chapter" id="certifications">
+      <span class="chapter-number reveal">Chapter V</span>
+      <h2 class="chapter-title reveal">Certifications & Credentials</h2>
+
+      <div class="table-caption reveal reveal-d1"><strong>Table 2.</strong> Professional certifications by issuing body and date.</div>
+      <ol class="cert-list reveal reveal-d1">
+        <li>
+          <span class="cert-name"><span class="issuer">IBM</span> — Build RAG Applications: Get Started</span>
+          <span class="cert-date">Mar 2026</span>
+        </li>
+        <li>
+          <span class="cert-name"><span class="issuer">Anthropic</span> — AI Fluency: Framework and Foundations</span>
+          <span class="cert-date">Mar 2026</span>
+        </li>
+        <li>
+          <span class="cert-name"><span class="issuer">MongoDB</span> — Building RAG Apps Using MongoDB</span>
+          <span class="cert-date">Mar 2026</span>
+        </li>
+        <li>
+          <span class="cert-name"><span class="issuer">Anthropic</span> — Introduction to Model Context Protocol</span>
+          <span class="cert-date">Mar 2026</span>
+        </li>
+        <li>
+          <span class="cert-name"><span class="issuer">IBM</span> — Develop Generative AI Applications</span>
+          <span class="cert-date">Mar 2026</span>
+        </li>
+        <li>
+          <span class="cert-name"><span class="issuer">Anthropic</span> — Model Context Protocol: Advanced Topics</span>
+          <span class="cert-date">Mar 2026</span>
+        </li>
+        <li>
+          <span class="cert-name"><span class="issuer">Anthropic</span> — Building with the Claude API</span>
+          <span class="cert-date">Mar 2026</span>
+        </li>
+        <li>
+          <span class="cert-name"><span class="issuer">IBM</span> — Data Analysis with Python</span>
+          <span class="cert-date">Feb 2019</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ======== CHAPTER VI — EDUCATION ======== -->
+    <section class="chapter" id="education">
+      <span class="chapter-number reveal">Chapter VI</span>
+      <h2 class="chapter-title reveal">Academic Background</h2>
+
+      <div class="edu-entries">
+        <div class="edu-card reveal reveal-d1">
+          <div class="degree-name">MCA — Master of Computer Applications</div>
+          <div class="institute-name">Vellore Institute of Technology</div>
+          <span class="grade">CGPA: 8.65 / 10</span>
+        </div>
+        <div class="edu-card reveal reveal-d2">
+          <div class="degree-name">BCA — Bachelor of Computer Applications</div>
+          <div class="institute-name">Ranchi University</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CHAPTER VII — CONTACT ======== -->
+    <section class="chapter" id="contact">
+      <span class="chapter-number reveal">Chapter VII</span>
+      <h2 class="chapter-title reveal">Correspondence</h2>
+
+      <div class="colophon">
+        <p class="reveal reveal-d1">
+          The author welcomes inquiries regarding new projects, collaborations, 
+          and opportunities. Correspondence may be directed to any of the following.
+        </p>
+        <div class="contact-methods reveal reveal-d2">
+          <a href="mailto:knitish899@gmail.com" class="contact-item" id="contact-email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            knitish899@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/nitish-kumar-9a5232163" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-linkedin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="tel:+918210510438" class="contact-item" id="contact-phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91-8210510438
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== ENDPAGE ======== -->
+    <footer class="endpage">
+      <span class="ornament">❦</span>
+      <p>Typeset with care by Nitish Kumar Purohit · MMXXVI</p>
+    </footer>
+
+  </main>
+</div>
+
+  <!-- ======== BACK TO TOP ======== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ======== SCRIPTS ======== -->
+  <script>
+    // Running header shadow on scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const headerNav = document.getElementById('header-nav');
+
+    if (menuToggle && headerNav) {
+      menuToggle.addEventListener('click', () => {
+        const open = headerNav.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', open);
+        menuToggle.textContent = open ? '✕' : '☰';
+      });
+
+      headerNav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          headerNav.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.textContent = '☰';
+        });
+      });
+    }
+
+    // Reading progress bar
+    const progressBar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      if (progressBar) progressBar.style.width = scrolled + '%';
+    }, { passive: true });
+
+    // Dual theme toggles (Sidebar and running header)
+    const themeToggle = document.getElementById('theme-toggle');
+    const sidebarThemeToggle = document.getElementById('sidebar-theme-toggle');
+    
+    const setTheme = (theme) => {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      
+      [themeToggle, sidebarThemeToggle].forEach(toggle => {
+        if (!toggle) return;
+        const icon = toggle.querySelector('.theme-icon');
+        const text = toggle.querySelector('.theme-text');
+        if (theme === 'dark') {
+          if (icon) icon.textContent = '☾';
+          if (text) text.textContent = 'Dark';
+        } else {
+          if (icon) icon.textContent = '☼';
+          if (text) text.textContent = 'Light';
+        }
+      });
+    };
+    
+    // Initial theme setup
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else if (systemPrefersDark) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+    
+    [themeToggle, sidebarThemeToggle].forEach(toggle => {
+      if (toggle) {
+        toggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+      }
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    }, { passive: true });
+    
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reducedMotion) {
+      reveals.forEach(el => el.classList.add('visible'));
+    } else {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+      reveals.forEach(el => io.observe(el));
+    }
+
+    // Active nav link & current chapter update & sidebar active row highlight on scroll
+    const sections = document.querySelectorAll('.chapter[id], .title-page');
+    const navLinks = document.querySelectorAll('#header-nav a');
+    const sidebarLinks = document.querySelectorAll('.sidebar-toc .toc-list a');
+    const currentChapterEl = document.getElementById('current-chapter');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      let currentChapterText = '';
+      
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 220) {
+          current = s.id;
+          if (s.id !== 'hero') {
+            const numEl = s.querySelector('.chapter-number');
+            if (numEl) {
+              currentChapterText = numEl.textContent;
+            }
+          }
+        }
+      });
+      
+      // Update top menu active link
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === `#${current}`);
+      });
+
+      // Update sidebar TOC active row
+      sidebarLinks.forEach(a => {
+        const li = a.closest('li');
+        if (li) {
+          if (a.getAttribute('href') === `#${current}`) {
+            li.classList.add('active');
+          } else {
+            li.classList.remove('active');
+          }
+        }
+      });
+
+      if (currentChapterEl) {
+        currentChapterEl.textContent = currentChapterText;
+      }
+    }, { passive: true });
+  </script>
+</body>
+</html>
